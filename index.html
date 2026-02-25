@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наталья Васильевна Лукань — ЛОР-хирург высшей категории | Москва</title>
+    <meta name="description" content="Кандидат медицинских наук, 21 год опыта. Специализация: эндоскопические операции, септопластика, лечение хронических ЛОР-заболеваний. Прием в СМ-Клиника на юго-западе Москвы.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Commissioner:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --primary-light: #2d6a4f;
+            --accent: #d4a574;
+            --accent-light: #e8c9a0;
+            --text: #2c2c2c;
+            --text-light: #5a5a5a;
+            --bg: #fdfaf7;
+            --bg-alt: #f5f0eb;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Commissioner', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(26, 77, 46, 0.1);
+            animation: slideDown 0.6s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-cta:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 77, 46, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        
+        .hero-content {
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-subtitle {
+            color: var(--primary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .hero-description {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            max-width: 540px;
+        }
+        
+        .credentials {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-bottom: 2.5rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--accent);
+        }
+        
+        .credential-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text);
+            font-size: 1rem;
+        }
+        
+        .credential-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--accent-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2.5rem;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(26, 77, 46, 0.25);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .image-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-frame::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 12px solid var(--white);
+            border-radius: 20px;
+            z-index: 1;
+        }
+        
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(10%);
+        }
+        
+        .image-accent {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 180px;
+            height: 180px;
+            background: var(--accent);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3.5rem 2rem;
+            margin: 4rem 0;
+        }
+        
+        .stats-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            animation: fadeInUp 0.6s ease-out both;
+        }
+        
+        .stat-item:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item:nth-child(4) { animation-delay: 0.4s; }
+        
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--accent-light);
+        }
+        
+        .stat-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Services Section */
+        .section {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-subtitle {
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        
+        .section h2 {
+            font-size: 3rem;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .service-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .service-list li {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-list li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        /* Certificate cards hover */
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Approach Section */
+        .approach {
+            background: var(--bg-alt);
+            padding: 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .approach::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(26, 77, 46, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .approach-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .approach-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .approach-text {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .principles {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .principle {
+            display: flex;
+            gap: 1.2rem;
+            align-items: flex-start;
+        }
+        
+        .principle-number {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .principle-content h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        
+        .principle-content p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 6rem 2rem;
+            color: var(--white);
+        }
+        
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonials h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--white);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .quote-icon {
+            font-size: 3rem;
+            color: var(--accent-light);
+            line-height: 1;
+            margin-bottom: 1rem;
+            opacity: 0.6;
+        }
+        
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: var(--accent-light);
+        }
+        
+        .author-detail {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .rating {
+            color: var(--accent-light);
+            font-size: 1.2rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            background: var(--white);
+            padding: 4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .contact-description {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-alt);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        
+        .contact-text {
+            flex: 1;
+        }
+        
+        .contact-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.2rem;
+        }
+        
+        .contact-value {
+            font-size: 1.1rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+        
+        .contact-value a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-value a:hover {
+            color: var(--primary-light);
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .form-group label {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            padding: 1rem;
+            border: 2px solid var(--bg-alt);
+            border-radius: 10px;
+            font-family: 'Commissioner', sans-serif;
+            font-size: 1rem;
+            color: var(--text);
+            transition: border-color 0.3s ease;
+            background: var(--bg);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-submit {
+            background: var(--primary);
+            color: var(--white);
+            padding: 1.1rem 2rem;
+            border: none;
+            border-radius: 35px;
+            font-family: 'Commissioner', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-submit:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 77, 46, 0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: var(--white);
+            padding: 3rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-about h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-light);
+        }
+        
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-description,
+            .credentials {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .approach-container,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section h2 {
+                font-size: 2.2rem;
+            }
+            
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-container {
+                padding: 2rem;
+            }
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Selection */
+        ::selection {
+            background: var(--accent);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">Н.В. Лукань</div>
+            <ul class="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#approach">Подход</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="publikatsii.html">Публикации</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <a href="tel:+74950214401" class="nav-cta">Записаться на приём</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-subtitle">ЛОР-хирург высшей категории</div>
+            <h1>Наталья Васильевна Лукань</h1>
+            <p class="hero-description">
+                Кандидат медицинских наук с 21-летним стажем. Специализируюсь на эндоскопических операциях и лечении хронических заболеваний ЛОР-органов. Помогаю людям дышать свободно и жить полноценной жизнью.
+            </p>
+            
+            <div class="credentials">
+                <div class="credential-item">
+                    <div class="credential-icon">✓</div>
+                    <span>Кандидат медицинских наук, стаж 21 год</span>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">✓</div>
+                    <span>Более 1000 успешных операций</span>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">✓</div>
+                    <span>Приём в СМ-Клиника на юго-западе Москвы</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Записаться на консультацию</a>
+                <a href="#services" class="btn-secondary">Узнать об услугах</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="image-frame">
+                <!-- Здесь будет размещено профессиональное фото -->
+                <img src="" alt="Наталья Васильевна Лукань" style="display: none;">
+                <div style="width: 100%; height: 600px; background: linear-gradient(135deg, #f5f0eb 0%, #e8c9a0 100%); display: flex; align-items: center; justify-content: center; color: #1a4d2e; font-size: 1rem; text-align: center; padding: 2rem; font-family: 'Commissioner', sans-serif;">
+                    Портретное фото
+                </div>
+            </div>
+            <div class="image-accent"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">21</div>
+                <div class="stat-label">Лет опыта</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Операций</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5.0</div>
+                <div class="stat-label">Рейтинг ПроДокторов</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">41</div>
+                <div class="stat-label">Благодарных отзыва</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="section-header">
+            <div class="section-subtitle">Специализация</div>
+            <h2>Услуги и операции</h2>
+            <p class="section-description">
+                Использую современные методы диагностики и лечения, включая эндоскопические малоинвазивные операции. Индивидуальный подход к каждому пациенту.
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔬</div>
+                <h3>Эндоскопическая хирургия</h3>
+                <p>Современные малоинвазивные операции с использованием эндоскопического оборудования высокого разрешения.</p>
+                <ul class="service-list">
+                    <li>Полипоз носа и пазух</li>
+                    <li>Хронический синусит</li>
+                    <li>Кисты околоносовых пазух</li>
+                </ul>
+                <a href="endoskopicheskaya-hirurgiya.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">⚕️</div>
+                <h3>Септопластика</h3>
+                <p>Коррекция искривления носовой перегородки для восстановления нормального дыхания.</p>
+                <ul class="service-list">
+                    <li>Минидоступ, быстрое восстановление</li>
+                    <li>Удаление костных шипов</li>
+                    <li>Редукция носовых раковин</li>
+                </ul>
+                <a href="septoplastika.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card" style="border-top: 4px solid var(--primary);">
+                <div class="service-icon">😴</div>
+                <h3>Лечение храпа и апноэ сна</h3>
+                <p>Комплексная диагностика и лечение нарушений дыхания во сне. Sleep-эндоскопия для точного выявления причин.</p>
+                <ul class="service-list">
+                    <li>Sleep-эндоскопия (медикаментозный сон)</li>
+                    <li>Хирургическая коррекция</li>
+                    <li>Индивидуальный план лечения</li>
+                </ul>
+                <a href="lechenie-hrapa.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">💉</div>
+                <h3>Тонзиллэктомия</h3>
+                <p>Удаление нёбных миндалин при хроническом тонзиллите с использованием современных методик.</p>
+                <ul class="service-list">
+                    <li>Радиоволновая техника</li>
+                    <li>Минимальная кровопотеря</li>
+                    <li>Комфортное восстановление</li>
+                </ul>
+                <a href="tonzillektomiya.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">👂</div>
+                <h3>Лечение отитов</h3>
+                <p>Диагностика и лечение острых и хронических заболеваний среднего уха.</p>
+                <ul class="service-list">
+                    <li>Консервативное лечение</li>
+                    <li>Парацентез при показаниях</li>
+                    <li>Профилактика осложнений</li>
+                </ul>
+                <a href="lechenie-otitov.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🌬️</div>
+                <h3>Лечение ринитов</h3>
+                <p>Комплексный подход к лечению аллергических и вазомоторных ринитов.</p>
+                <ul class="service-list">
+                    <li>Диагностика причины</li>
+                    <li>Современная терапия</li>
+                    <li>Хирургическая коррекция</li>
+                </ul>
+                <a href="lechenie-rinitov.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">👶</div>
+                <h3>Аденоиды</h3>
+                <p>Диагностика и лечение аденоидов у детей и взрослых с использованием щадящих методик.</p>
+                <ul class="service-list">
+                    <li>Эндоскопический контроль</li>
+                    <li>Минимальная травматичность</li>
+                    <li>Быстрая реабилитация</li>
+                </ul>
+                <a href="adenoidy.html" style="color: var(--primary); font-weight: 500; font-size: 0.9rem; margin-top: 0.5rem; display: inline-block; text-decoration: none;">Подробнее →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section id="approach" class="approach">
+        <div class="approach-container">
+            <div class="approach-content">
+                <h2>Мой подход к лечению</h2>
+                <p class="approach-text">
+                    За 21 год практики я выработала философию, которая ставит интересы пациента на первое место. Я не назначаю лишних процедур и честно говорю о необходимости операции.
+                </p>
+                
+                <div class="principles">
+                    <div class="principle">
+                        <div class="principle-number">1</div>
+                        <div class="principle-content">
+                            <h4>Тщательная диагностика</h4>
+                            <p>Первичная консультация длится более часа. Я провожу полное эндоскопическое обследование, чтобы увидеть полную картину.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-number">2</div>
+                        <div class="principle-content">
+                            <h4>Честность с пациентом</h4>
+                            <p>Если проблема решается консервативно — я не буду предлагать операцию. Если операция необходима — объясню почему.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="principle">
+                        <div class="principle-number">3</div>
+                        <div class="principle-content">
+                            <h4>Сопровождение после операции</h4>
+                            <p>Я всегда на связи в период реабилитации. Максимально безболезненные перевязки и внимание к каждой детали.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="approach-image">
+                <!-- Здесь будет размещено фото интерьера или процесса работы -->
+                <div style="width: 100%; height: 500px; background: linear-gradient(135deg, #2d6a4f 0%, #1a4d2e 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: #e8c9a0; font-size: 1rem; text-align: center; font-family: 'Commissioner', sans-serif;">
+                    Фото интерьера
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+            <h2>Отзывы пациентов</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        С такой тщательностью меня не осматривал еще ни один врач. На первичной консультации я пробыла более часа. Все объяснила, показала. Очень приятно, что врач горит своей работой!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Пациентка</div>
+                            <div class="author-detail">Тонзиллэктомия, 2025</div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Наталья Васильевна — профессионал с большой буквы. Врач очень внимательный, неравнодушный, все доходчиво объясняет. Я очень благодарна, что попала к ней!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Пациентка</div>
+                            <div class="author-detail">Септопластика, декабрь 2025</div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        13 лет пользовалась сосудосуживающими каплями. Наталья Васильевна провела операцию, удалила костный шип. Огромная благодарность не только за профессионализм, но и за чуткость и человеческое отношение!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Пациентка</div>
+                            <div class="author-detail">Септопластика, октябрь 2025</div>
+                        </div>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-subtitle">Квалификация</div>
+            <h2>Сертификаты и дипломы</h2>
+            <p class="section-description">
+                Постоянное профессиональное развитие и повышение квалификации в ведущих медицинских учреждениях России.
+            </p>
+        </div>
+        
+        <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <div class="certificate-card" style="background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease;">
+                <!-- Здесь будет диплом к.м.н. -->
+                <div style="width: 100%; height: 350px; background: linear-gradient(135deg, #f5f0eb 0%, #e8c9a0 100%); display: flex; align-items: center; justify-content: center; color: #1a4d2e; font-size: 0.95rem;">
+                    Диплом к.м.н.
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">Кандидат медицинских наук</h4>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">Первый МГМУ им. И.М. Сеченова</p>
+                </div>
+            </div>
+            
+            <div class="certificate-card" style="background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease;">
+                <!-- Здесь будет сертификат специалиста -->
+                <div style="width: 100%; height: 350px; background: linear-gradient(135deg, #f5f0eb 0%, #e8c9a0 100%); display: flex; align-items: center; justify-content: center; color: #1a4d2e; font-size: 0.95rem;">
+                    Сертификат
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">Оториноларингология</h4>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">Повышение квалификации, 2024</p>
+                </div>
+            </div>
+            
+            <div class="certificate-card" style="background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease;">
+                <!-- Здесь будет диплом базового образования -->
+                <div style="width: 100%; height: 350px; background: linear-gradient(135deg, #f5f0eb 0%, #e8c9a0 100%); display: flex; align-items: center; justify-content: center; color: #1a4d2e; font-size: 0.95rem;">
+                    Диплом
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">Лечебное дело</h4>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">АГМА, 2004</p>
+                </div>
+            </div>
+            
+            <div class="certificate-card" style="background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease;">
+                <!-- Здесь будет сертификат конференции -->
+                <div style="width: 100%; height: 350px; background: linear-gradient(135deg, #f5f0eb 0%, #e8c9a0 100%); display: flex; align-items: center; justify-content: center; color: #1a4d2e; font-size: 0.95rem;">
+                    Сертификат
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 0.5rem;">Съезд оториноларингологов</h4>
+                    <p style="color: var(--text-light); font-size: 0.9rem;">XVIII Съезд, 2011</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section" style="background: var(--bg-alt); padding: 4rem 2rem; margin: 0;">
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div class="section-subtitle">Научная деятельность</div>
+            <h2>Публикации и исследования</h2>
+            <p class="section-description" style="margin-bottom: 2.5rem;">
+                Автор научных работ по оториноларингологии, участник профессиональных конференций и съездов.
+            </p>
+            <a href="publikatsii.html" class="btn-primary" style="display: inline-block;">Посмотреть публикации</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Записаться на приём</h2>
+                <p class="contact-description">
+                    Я принимаю в СМ-Клиника на улице Академика Анохина. Буду рада помочь вам решить проблемы со здоровьем ЛОР-органов.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <div class="contact-label">Телефон для записи</div>
+                            <div class="contact-value"><a href="tel:+74950214401">+7 (495) 021-44-01</a></div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <div class="contact-label">Адрес клиники</div>
+                            <div class="contact-value">ул. Академика Анохина, д. 8, корп. 1<br>м. Юго-Западная</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-text">
+                            <div class="contact-label">Режим работы</div>
+                            <div class="contact-value">Пн-Сб: 9:00 – 21:00<br>Воскресенье: по записи</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" onsubmit="return handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" placeholder="Опишите вашу проблему или вопрос"></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">Отправить заявку</button>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">
+                    Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Наталья Васильевна Лукань</h3>
+                <p>
+                    Врач оториноларинголог-хирург высшей категории, кандидат медицинских наук. Специализация: эндоскопическая хирургия носа и околоносовых пазух, септопластика, тонзиллэктомия.
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#approach">Подход</a></li>
+                    <li><a href="#testimonials">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+74950214401">+7 (495) 021-44-01</a></li>
+                    <li><a href="https://prodoctorov.ru/moskva/vrach/210532-lukan/" target="_blank">ПроДокторов</a></li>
+                    <li>СМ-Клиника, Москва</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Наталья Васильевна Лукань. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll для навигации
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Анимация появления элементов при скролле
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.service-card, .testimonial-card, .principle').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Обработка формы
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                phone: formData.get('phone'),
+                message: formData.get('message')
+            };
+            
+            // Здесь можно добавить отправку данных на сервер
+            console.log('Form submitted:', data);
+            
+            alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+            event.target.reset();
+            
+            return false;
+        }
+        
+        // Прозрачность навигации при скролле
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
