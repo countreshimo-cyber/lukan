@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эндоскопическая хирургия — Наталья Лукань | ЛОР-хирург Москва</title>
+    <meta name="description" content="Эндоскопические операции на носу и околоносовых пазухах. Малоинвазивное лечение полипоза, синусита, кист. Опыт более 1000 операций. Запись в СМ-Клиника.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Commissioner:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --primary-light: #2d6a4f;
+            --accent: #d4a574;
+            --accent-light: #e8c9a0;
+            --text: #2c2c2c;
+            --text-light: #5a5a5a;
+            --bg: #fdfaf7;
+            --bg-alt: #f5f0eb;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Commissioner', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(26, 77, 46, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+        
+        .nav-cta:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 77, 46, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .breadcrumb a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        /* Content Section */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .main-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .main-content h3 {
+            font-size: 1.8rem;
+            margin: 2.5rem 0 1.2rem;
+            color: var(--primary);
+        }
+        
+        .main-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            color: var(--text);
+        }
+        
+        .main-content ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .main-content li {
+            padding: 0.7rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        .main-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .info-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+        }
+        
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid var(--bg-alt);
+        }
+        
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+        
+        .info-text {
+            flex: 1;
+        }
+        
+        .info-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+        
+        .info-value {
+            font-weight: 500;
+            color: var(--text);
+        }
+        
+        .cta-button {
+            width: 100%;
+            background: var(--primary);
+            color: var(--white);
+            padding: 1.2rem;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Commissioner', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            margin-top: 1.5rem;
+        }
+        
+        .cta-button:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 77, 46, 0.25);
+        }
+        
+        /* Process Section */
+        .process {
+            background: var(--bg-alt);
+            padding: 4rem 2rem;
+            margin: 4rem 0;
+        }
+        
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .process h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .step {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: var(--text);
+        }
+        
+        .step p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        
+        /* Advantages */
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .advantage {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border-top: 4px solid var(--accent);
+        }
+        
+        .advantage-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .advantage h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--text);
+        }
+        
+        .advantage p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        /* CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .final-cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .final-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+            padding: 1.2rem 2.5rem;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            padding: 1.2rem 2.5rem;
+            border: 2px solid var(--white);
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .main-content h2 {
+                font-size: 2rem;
+            }
+            
+            .advantages, .steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Н.В. Лукань</a>
+            <a href="tel:+74957774849" class="nav-cta">Записаться на приём</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a> / <a href="index.html#services">Услуги</a> / Эндоскопическая хирургия
+            </div>
+            <h1>Эндоскопическая хирургия носа и околоносовых пазух</h1>
+            <p class="hero-description">
+                Современные малоинвазивные операции с использованием эндоскопического оборудования высокого разрешения. Минимальная травматичность, быстрое восстановление, отличные результаты.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="content-grid">
+            <div class="main-content">
+                <h2>Что такое эндоскопическая хирургия?</h2>
+                <p>
+                    Эндоскопическая хирургия — это современный метод выполнения операций на ЛОР-органах с использованием специального оптического оборудования. Все манипуляции проводятся через естественные отверстия носа без разрезов на лице, что делает процедуру максимально щадящей.
+                </p>
+                <p>
+                    Эндоскоп — тонкая трубка с высокочувствительной камерой и источником света — позволяет хирургу видеть операционное поле с многократным увеличением. Это обеспечивает ювелирную точность всех действий и минимальное повреждение здоровых тканей.
+                </p>
+
+                <h3>Показания к эндоскопическим операциям</h3>
+                <p>Эндоскопическая хирургия эффективна при следующих заболеваниях:</p>
+                <ul>
+                    <li>Хронический полипозный риносинусит</li>
+                    <li>Хронический гнойный синусит, не поддающийся консервативному лечению</li>
+                    <li>Кисты околоносовых пазух</li>
+                    <li>Инородные тела в пазухах</li>
+                    <li>Грибковые поражения пазух носа</li>
+                    <li>Одонтогенный гайморит</li>
+                    <li>Аденоиды (в сочетании с другими методами)</li>
+                    <li>Опухоли полости носа и пазух (доброкачественные)</li>
+                </ul>
+
+                <h3>Какие операции я выполняю</h3>
+                <p>В моей практике я использую весь спектр эндоскопических методик:</p>
+                <ul>
+                    <li><strong>Полисинусотомия</strong> — удаление полипов из всех пазух носа</li>
+                    <li><strong>Гайморотомия</strong> — вскрытие и санация верхнечелюстной пазухи</li>
+                    <li><strong>Этмоидотомия</strong> — операции на решетчатом лабиринте</li>
+                    <li><strong>Фронтотомия</strong> — операции на лобной пазухе</li>
+                    <li><strong>Сфенотомия</strong> — операции на клиновидной пазухе</li>
+                    <li><strong>Удаление кист</strong> околоносовых пазух</li>
+                    <li><strong>Коррекция внутриносовых структур</strong> для улучшения дыхания</li>
+                </ul>
+
+                <h3>Преимущества эндоскопического метода</h3>
+                <div class="advantages">
+                    <div class="advantage">
+                        <div class="advantage-icon">🔬</div>
+                        <h3>Высокая точность</h3>
+                        <p>Многократное увеличение позволяет работать с ювелирной точностью, не повреждая здоровые ткани</p>
+                    </div>
+                    
+                    <div class="advantage">
+                        <div class="advantage-icon">✨</div>
+                        <h3>Без разрезов</h3>
+                        <p>Все манипуляции через нос — никаких шрамов на лице, быстрое восстановление</p>
+                    </div>
+                    
+                    <div class="advantage">
+                        <div class="advantage-icon">⏱️</div>
+                        <h3>Быстрая реабилитация</h3>
+                        <p>Минимальная травматичность означает короткий восстановительный период</p>
+                    </div>
+                    
+                    <div class="advantage">
+                        <div class="advantage-icon">🎯</div>
+                        <h3>Радикальность</h3>
+                        <p>Хороший обзор позволяет удалить все патологические ткани с первого раза</p>
+                    </div>
+                    
+                    <div class="advantage">
+                        <div class="advantage-icon">💊</div>
+                        <h3>Меньше осложнений</h3>
+                        <p>Щадящая техника снижает риск кровотечений и воспалительных процессов</p>
+                    </div>
+                    
+                    <div class="advantage">
+                        <div class="advantage-icon">🏥</div>
+                        <h3>Амбулаторно</h3>
+                        <p>Многие операции можно выполнить амбулаторно или с госпитализацией на 1 день</p>
+                    </div>
+                </div>
+
+                <h3>Подготовка к операции</h3>
+                <p>
+                    Перед эндоскопической операцией необходимо пройти комплексное обследование. На первичной консультации я провожу подробный осмотр с помощью эндоскопа, изучаю результаты КТ околоносовых пазух, при необходимости назначаю дополнительные исследования.
+                </p>
+                <p>
+                    Обязательные исследования перед операцией:
+                </p>
+                <ul>
+                    <li>Компьютерная томография (КТ) околоносовых пазух</li>
+                    <li>Общий анализ крови и мочи</li>
+                    <li>Коагулограмма (свертываемость крови)</li>
+                    <li>ЭКГ и консультация терапевта</li>
+                    <li>Анализы на инфекции (ВИЧ, гепатиты, сифилис)</li>
+                </ul>
+                <p>
+                    За 2 недели до операции необходимо прекратить прием препаратов, разжижающих кровь (аспирин, НПВС), если это согласовано с вашим лечащим врачом.
+                </p>
+
+                <h3>Реабилитация после операции</h3>
+                <p>
+                    Восстановительный период после эндоскопических операций протекает значительно легче, чем после традиционных вмешательств. Большинство пациентов уже на следующий день могут вернуться к обычной жизни с некоторыми ограничениями.
+                </p>
+                <p><strong>Первые 3-5 дней:</strong></p>
+                <ul>
+                    <li>Ежедневные осмотры и туалет полости носа в клинике</li>
+                    <li>Возможны небольшие выделения с примесью крови — это нормально</li>
+                    <li>Дыхание может быть затруднено из-за отека</li>
+                    <li>Избегать физических нагрузок и наклонов</li>
+                </ul>
+                <p><strong>Следующие 2-3 недели:</strong></p>
+                <ul>
+                    <li>Регулярное промывание носа солевыми растворами</li>
+                    <li>Использование назначенных препаратов (капли, спреи)</li>
+                    <li>Контрольные осмотры по графику</li>
+                    <li>Постепенное возвращение к обычной активности</li>
+                </ul>
+                <p>
+                    Я всегда остаюсь на связи с пациентами в период восстановления, готова ответить на любые вопросы и при необходимости скорректировать лечение.
+                </p>
+
+                <h3>Результаты и прогноз</h3>
+                <p>
+                    Эндоскопические операции дают отличные долгосрочные результаты при соблюдении всех рекомендаций. Восстанавливается носовое дыхание, исчезают головные боли, прекращаются гнойные выделения. Качество жизни значительно улучшается.
+                </p>
+                <p>
+                    При хроническом полипозном риносинусите важно понимать, что существует риск рецидива — повторного роста полипов. Для профилактики я назначаю поддерживающую терапию и регулярные контрольные осмотры. При соблюдении рекомендаций ремиссия может длиться годами.
+                </p>
+
+                <h3>Почему пациенты выбирают меня</h3>
+                <p>
+                    За 21 год практики я выполнила более 1000 эндоскопических операций различной сложности. Постоянно совершенствую свои навыки на российских и международных конференциях, владею самыми современными методиками.
+                </p>
+                <p>
+                    Мой подход — это тщательная диагностика, честность с пациентом и внимание к каждой детали. Я не назначаю лишних процедур, но и не упрощаю задачу там, где требуется серьезное вмешательство. Каждая операция планируется индивидуально с учетом особенностей анатомии и сопутствующих заболеваний.
+                </p>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="info-card">
+                    <h3>Информация</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">⏱️</div>
+                        <div class="info-text">
+                            <div class="info-label">Длительность операции</div>
+                            <div class="info-value">1-3 часа</div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">💊</div>
+                        <div class="info-text">
+                            <div class="info-label">Анестезия</div>
+                            <div class="info-value">Общий наркоз</div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🏥</div>
+                        <div class="info-text">
+                            <div class="info-label">Госпитализация</div>
+                            <div class="info-value">1-2 дня</div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🔄</div>
+                        <div class="info-text">
+                            <div class="info-label">Реабилитация</div>
+                            <div class="info-value">2-3 недели</div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✨</div>
+                        <div class="info-text">
+                            <div class="info-label">Эффект</div>
+                            <div class="info-value">Долгосрочный</div>
+                        </div>
+                    </div>
+                    
+                    <a href="tel:+74957774849" class="cta-button">Записаться на консультацию</a>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Врач</h3>
+                    <p style="margin-bottom: 1rem; line-height: 1.7;">
+                        <strong>Лукань Наталья Васильевна</strong><br>
+                        Кандидат медицинских наук<br>
+                        Стаж 21 год<br>
+                        Более 1000 операций
+                    </p>
+                    <a href="index.html" class="cta-button" style="background: var(--bg-alt); color: var(--primary);">На главную</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="process-container">
+            <h2>Как проходит операция</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Анестезия</h3>
+                    <p>Операция проводится под общим наркозом — вы спите и ничего не чувствуете</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Введение эндоскопа</h3>
+                    <p>Через носовые ходы вводится эндоскопическое оборудование</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Удаление патологии</h3>
+                    <p>С помощью специальных инструментов удаляются полипы, кисты или воспаленные ткани</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Гемостаз</h3>
+                    <p>Останавливается кровотечение, при необходимости устанавливаются тампоны</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Завершение</h3>
+                    <p>Контроль результата, пробуждение от наркоза, перевод в палату</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-content">
+            <h2>Готовы к консультации?</h2>
+            <p>
+                Запишитесь на прием, и я проведу подробное эндоскопическое обследование, изучу ваши снимки и предложу оптимальный план лечения. Первичная консультация длится около часа — я уделяю каждому пациенту достаточно времени.
+            </p>
+            <div class="cta-buttons">
+                <a href="tel:+74957774849" class="btn-white">Позвонить сейчас</a>
+                <a href="index.html#contact" class="btn-outline">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Наталья Васильевна Лукань. <a href="index.html">Вернуться на главную</a></p>
+    </footer>
+</body>
+</html>
