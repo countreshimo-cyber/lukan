@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Публикации и исследования — Наталья Лукань</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Commissioner:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --primary-light: #2d6a4f;
+            --accent: #d4a574;
+            --text: #2c2c2c;
+            --bg: #fdfaf7;
+            --white: #ffffff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Commissioner', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+        }
+        
+        h1, h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(26, 77, 46, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        
+        .publication {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+        
+        .publication h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .publication-meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: var(--text);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Н.В. Лукань</a>
+            <a href="index.html" class="nav-cta">На главную</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Публикации и исследования</h1>
+            <p style="font-size: 1.2rem;">Научная деятельность и участие в профессиональных конференциях</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="publication">
+            <h2>X юбилейный конгресс Российского общества ринологов</h2>
+            <div class="publication-meta">2013 год</div>
+            <p>Участие в конгрессе с докладами по современным методам эндоскопической ринохирургии и лечению хронических риносинуситов.</p>
+        </div>
+
+        <div class="publication">
+            <h2>XVIII Съезд оториноларингологов России</h2>
+            <div class="publication-meta">2011 год</div>
+            <p>Участие в работе съезда, обмен опытом с ведущими специалистами по оториноларингологии.</p>
+        </div>
+
+        <div class="publication">
+            <h2>Медико-техническое обеспечение диагностики заболеваний верхних дыхательных путей</h2>
+            <div class="publication-meta">2010 год</div>
+            <p>Курс повышения квалификации по современным методам диагностики и консервативного лечения заболеваний ЛОР-органов.</p>
+        </div>
+
+        <div class="publication">
+            <h2>Кандидатская диссертация</h2>
+            <div class="publication-meta">Первый МГМУ им. И.М. Сеченова</div>
+            <p>Защита диссертации по специальности «Оториноларингология». Научная работа посвящена совершенствованию методов диагностики и лечения заболеваний носа и околоносовых пазух.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <p style="color: #888; margin-bottom: 1.5rem;">Страница находится в разработке. Полный список публикаций будет добавлен в ближайшее время.</p>
+            <a href="index.html" style="display: inline-block; background: var(--primary); color: var(--white); padding: 1rem 2rem; border-radius: 30px; text-decoration: none;">Вернуться на главную</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Наталья Васильевна Лукань. <a href="index.html">На главную</a></p>
+    </footer>
+</body>
+</html>
