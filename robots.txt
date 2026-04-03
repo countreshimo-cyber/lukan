@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lukan-lor.ru/sitemap.xml
+
+# Disallow admin or temporary pages if any
+# Disallow: /admin/
