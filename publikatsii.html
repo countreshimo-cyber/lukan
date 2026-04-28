@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Публикации и исследования — Наталья Лукань</title>
+    <title>Публикации и выступления — Наталья Лукань</title>
+    <meta name="description" content="Научные статьи, публикации в СМИ и экспертные комментарии Натальи Лукань по оториноларингологии, лечению храпа и апноэ сна.">
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Commissioner:wght@300;400;500;600&display=swap" rel="stylesheet">
     
@@ -13,8 +14,10 @@
             --primary-light: #2d6a4f;
             --accent: #d4a574;
             --text: #2c2c2c;
+            --text-light: #5a5a5a;
             --bg: #fdfaf7;
-            --white: #ffffff;
+            --bg-alt: #f5f0eb;
+            --white: #fff;
         }
         
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,9 +27,10 @@
             color: var(--text);
             background: var(--bg);
             line-height: 1.7;
+            overflow-x: hidden;
         }
         
-        h1, h2 {
+        h1, h2, h3 {
             font-family: 'Cormorant Garamond', serif;
             font-weight: 400;
         }
@@ -66,6 +70,12 @@
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-cta:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
         }
         
         .hero {
@@ -87,24 +97,69 @@
             padding: 0 2rem;
         }
         
+        .publication-category {
+            margin-bottom: 4rem;
+        }
+        
+        .publication-category h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        
         .publication {
             background: var(--white);
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s;
         }
         
-        .publication h2 {
+        .publication:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .publication h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--primary);
         }
         
         .publication-meta {
-            color: #888;
+            color: var(--text-light);
             font-size: 0.9rem;
             margin-bottom: 1rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .publication-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .publication p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .publication-link {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        
+        .publication-link:hover {
+            border-bottom-color: var(--primary);
         }
         
         footer {
@@ -112,6 +167,7 @@
             color: var(--white);
             padding: 2rem;
             text-align: center;
+            margin-top: 4rem;
         }
         
         footer a {
@@ -121,6 +177,8 @@
         
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
+            .publication-category h2 { font-size: 1.6rem; }
+            .publication { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -128,45 +186,175 @@
     <nav>
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Н.В. Лукань</a>
-            <a href="index.html" class="nav-cta">На главную</a>
+            <a href="tel:+74957774849" class="nav-cta">Записаться</a>
         </div>
     </nav>
 
     <section class="hero">
         <div style="max-width: 900px; margin: 0 auto;">
-            <h1>Публикации и исследования</h1>
-            <p style="font-size: 1.2rem;">Научная деятельность и участие в профессиональных конференциях</p>
+            <h1>Публикации и выступления</h1>
+            <p style="font-size: 1.2rem;">Научные статьи, экспертные комментарии в СМИ и участие в профессиональных конференциях</p>
         </div>
     </section>
 
     <section class="content">
-        <div class="publication">
-            <h2>X юбилейный конгресс Российского общества ринологов</h2>
-            <div class="publication-meta">2013 год</div>
-            <p>Участие в конгрессе с докладами по современным методам эндоскопической ринохирургии и лечению хронических риносинуситов.</p>
+        <!-- Научные публикации -->
+        <div class="publication-category">
+            <h2>Научные публикации</h2>
+            
+            <div class="publication">
+                <h3>Консервативное лечение различных форм хронического тонзиллита</h3>
+                <div class="publication-meta">
+                    <span>📚 CyberLeninka</span>
+                    <span>🔬 Научная статья</span>
+                </div>
+                <p>
+                    Комплексное исследование эффективности различных методов консервативного лечения хронического тонзиллита. Анализ показаний к медикаментозной терапии и критериев выбора между консервативным и хирургическим лечением.
+                </p>
+                <a href="https://cyberleninka.ru/article/n/konservativnoe-lechenie-razlichnyh-form-hronicheskogo-tonzillita/viewer" target="_blank" rel="noopener" class="publication-link">Читать статью →</a>
+            </div>
         </div>
 
-        <div class="publication">
-            <h2>XVIII Съезд оториноларингологов России</h2>
-            <div class="publication-meta">2011 год</div>
-            <p>Участие в работе съезда, обмен опытом с ведущими специалистами по оториноларингологии.</p>
+        <!-- СМИ и экспертные комментарии -->
+        <div class="publication-category">
+            <h2>Экспертные комментарии в СМИ</h2>
+            
+            <div class="publication">
+                <h3>Храп может привести к мигрени, инсульту и инфаркту</h3>
+                <div class="publication-meta">
+                    <span>📰 Ugra.ru</span>
+                    <span>📅 2024</span>
+                </div>
+                <p>
+                    Отоларинголог Наталья Лукань объяснила, почему храп — это не просто дискомфорт для окружающих, а серьёзный медицинский симптом. Хроническое нарушение дыхания во сне приводит к кислородному голоданию мозга и повышает риск сердечно-сосудистых катастроф.
+                </p>
+                <a href="https://ugra.ru/news/article/otorinolaringolog-lukan-obyasnila-chto-hrap-mojet-privesti-k-migreni-insultu-i-infarktu-2371/" target="_blank" rel="noopener" class="publication-link">Читать полностью →</a>
+            </div>
+
+            <div class="publication">
+                <h3>Последствия храпа: от головной боли до инфаркта</h3>
+                <div class="publication-meta">
+                    <span>📺 RT (Russia Today)</span>
+                    <span>📅 2024</span>
+                </div>
+                <p>
+                    Врач-отоларинголог Наталья Лукань рассказала о серьёзных последствиях игнорирования храпа и апноэ сна. Постоянная гипоксия влияет на все системы организма: от нервной и сердечно-сосудистой до эндокринной.
+                </p>
+                <a href="https://russian.rt.com/russia/news/1371827-vrach-posledstviya-hrapa" target="_blank" rel="noopener" class="publication-link">Читать на RT →</a>
+            </div>
+
+            <div class="publication">
+                <h3>Опасность храпа: почему нельзя игнорировать симптом</h3>
+                <div class="publication-meta">
+                    <span>📰 Комсомольская правда (КП)</span>
+                    <span>📅 2024</span>
+                </div>
+                <p>
+                    Эксперт по нарушениям сна Наталья Лукань объяснила читателям КП, как отличить обычный храп от синдрома обструктивного апноэ сна, и когда необходимо срочно обратиться к специалисту.
+                </p>
+                <a href="https://www.kp.ru/online/news/6002832/" target="_blank" rel="noopener" class="publication-link">Читать на KP.RU →</a>
+            </div>
+
+            <div class="publication">
+                <h3>Храп и его последствия для здоровья</h3>
+                <div class="publication-meta">
+                    <span>📰 Life.ru</span>
+                    <span>📅 2024</span>
+                </div>
+                <p>
+                    Отоларинголог и апнолог Наталья Лукань в интервью Life.ru рассказала о современных методах диагностики и лечения храпа, включая sleep-эндоскопию — золотой стандарт выявления причин нарушения дыхания во сне.
+                </p>
+                <a href="https://life.ru/p/1689077" target="_blank" rel="noopener" class="publication-link">Читать на Life.ru →</a>
+            </div>
+
+            <div class="publication">
+                <h3>Материалы на АиФ (Аргументы и Факты)</h3>
+                <div class="publication-meta">
+                    <span>📰 Аргументы и Факты</span>
+                    <span>📅 2023-2024</span>
+                </div>
+                <p>
+                    Серия экспертных комментариев и статей на портале АиФ по вопросам оториноларингологии, лечения ЛОР-заболеваний и нарушений дыхания во сне.
+                </p>
+                <a href="https://aif.ru/tag/natalya_lukan" target="_blank" rel="noopener" class="publication-link">Смотреть все материалы →</a>
+            </div>
+
+            <div class="publication">
+                <h3>Почему храп опасен для здоровья</h3>
+                <div class="publication-meta">
+                    <span>📰 Дзен</span>
+                    <span>📅 2024</span>
+                </div>
+                <p>
+                    Подробный разбор механизма возникновения храпа, его влияния на качество жизни и здоровье. Рассказываю о том, когда храп требует медицинского вмешательства и какие существуют методы лечения.
+                </p>
+                <a href="https://dzen.ru/a/aaHP0wLFUhfRi3kL" target="_blank" rel="noopener" class="publication-link">Читать на Дзен →</a>
+            </div>
         </div>
 
-        <div class="publication">
-            <h2>Медико-техническое обеспечение диагностики заболеваний верхних дыхательных путей</h2>
-            <div class="publication-meta">2010 год</div>
-            <p>Курс повышения квалификации по современным методам диагностики и консервативного лечения заболеваний ЛОР-органов.</p>
+        <!-- Конференции -->
+        <div class="publication-category">
+            <h2>Участие в конференциях и конгрессах</h2>
+            
+            <div class="publication">
+                <h3>X юбилейный конгресс Российского общества ринологов</h3>
+                <div class="publication-meta">
+                    <span>🎤 Конгресс</span>
+                    <span>📅 2013 год</span>
+                    <span>📍 Москва</span>
+                </div>
+                <p>
+                    Участие в работе юбилейного конгресса с докладами по современным методам эндоскопической ринохирургии и лечению хронических риносинуситов. Обмен опытом с ведущими российскими и зарубежными специалистами в области ринологии.
+                </p>
+            </div>
+
+            <div class="publication">
+                <h3>XVIII Съезд оториноларингологов России</h3>
+                <div class="publication-meta">
+                    <span>🎤 Съезд</span>
+                    <span>📅 2011 год</span>
+                    <span>📍 Санкт-Петербург</span>
+                </div>
+                <p>
+                    Участие в работе всероссийского съезда оториноларингологов. Обсуждение современных подходов к диагностике и лечению заболеваний ЛОР-органов, обмен опытом с коллегами из разных регионов России.
+                </p>
+            </div>
         </div>
 
-        <div class="publication">
-            <h2>Кандидатская диссертация</h2>
-            <div class="publication-meta">Первый МГМУ им. И.М. Сеченова</div>
-            <p>Защита диссертации по специальности «Оториноларингология». Научная работа посвящена совершенствованию методов диагностики и лечения заболеваний носа и околоносовых пазух.</p>
+        <!-- Образование -->
+        <div class="publication-category">
+            <h2>Образование и квалификация</h2>
+            
+            <div class="publication">
+                <h3>Кандидат медицинских наук</h3>
+                <div class="publication-meta">
+                    <span>🎓 Ученая степень</span>
+                    <span>🏛️ Первый МГМУ им. И.М. Сеченова</span>
+                </div>
+                <p>
+                    Защита диссертации по специальности «Оториноларингология». Научная работа посвящена совершенствованию методов диагностики и лечения заболеваний носа и околоносовых пазух, в том числе с применением эндоскопических технологий.
+                </p>
+            </div>
+
+            <div class="publication">
+                <h3>Повышение квалификации по оториноларингологии</h3>
+                <div class="publication-meta">
+                    <span>📜 Сертификат</span>
+                    <span>📅 2020 год</span>
+                </div>
+                <p>
+                    Регулярное повышение квалификации по современным методам диагностики и лечения заболеваний ЛОР-органов, включая эндоскопическую хирургию и методы лечения нарушений дыхания во сне.
+                </p>
+            </div>
         </div>
 
-        <div style="text-align: center; margin-top: 4rem;">
-            <p style="color: #888; margin-bottom: 1.5rem;">Страница находится в разработке. Полный список публикаций будет добавлен в ближайшее время.</p>
-            <a href="index.html" style="display: inline-block; background: var(--primary); color: var(--white); padding: 1rem 2rem; border-radius: 30px; text-decoration: none;">Вернуться на главную</a>
+        <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--bg-alt); border-radius: 16px;">
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--primary);">Консультация и запись на приём</h3>
+            <p style="margin-bottom: 2rem; color: var(--text-light);">
+                Если у вас есть вопросы по любой из тем моих публикаций или вам требуется консультация — буду рада помочь
+            </p>
+            <a href="tel:+74957774849" style="display: inline-block; background: var(--primary); color: var(--white); padding: 1rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 500; transition: all 0.3s;">Позвонить: +7 (495) 777-48-49</a>
+            <a href="index.html#contact" style="display: inline-block; background: transparent; color: var(--primary); padding: 1rem 2rem; border: 2px solid var(--primary); border-radius: 30px; text-decoration: none; font-weight: 500; margin-left: 1rem; transition: all 0.3s;">Оставить заявку</a>
         </div>
     </section>
 
