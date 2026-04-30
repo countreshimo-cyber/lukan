@@ -25,6 +25,14 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://lukan-lor.ru/">
     
+    <!-- SEO additional -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Наталья Васильевна Лукань">
+    <meta name="geo.region" content="RU-MOW">
+    <meta name="geo.placename" content="Москва">
+    <meta name="geo.position" content="55.623877;37.497876">
+    <meta name="ICBM" content="55.623877, 37.497876">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +66,68 @@
         "name": "Первый МГМУ им. И.М. Сеченова"
       },
       "sameAs": [
-        "https://prodoctorov.ru/moskva/vrach/748293-lukan/"
+        "https://prodoctorov.ru/moskva/vrach/748293-lukan/",
+        "https://prodoctorov.ru/moskva/vrach/210532-lukan/"
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-description", ".hero-subtitle", ".contact-description"]
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://lukan-lor.ru/"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Что такое септопластика?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Септопластика — хирургическая операция по коррекции искривлённой носовой перегородки. Восстанавливает нормальное носовое дыхание, устраняет хроническую заложенность и снижает риск воспалений. Выполняется эндоскопически, без внешних разрезов."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как лечат храп и апноэ сна?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Лечение храпа и апноэ сна зависит от причины. Наталья Васильевна Лукань, апнолог, проводит диагностику и при необходимости назначает хирургическое лечение: увулопалатопластику или операцию на мягком нёбе. При обструктивном апноэ также применяется СИПАП-терапия."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Где ведёт приём доктор Лукань?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Наталья Васильевна Лукань принимает в СМ-Клиника по адресу: Москва, ул. Академика Анохина, д. 8, корп. 1 (м. Юго-Западная). Запись по телефону +7 (495) 777-48-49."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как удаляют полипы носа?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Полипы носа и околоносовых пазух удаляются эндоскопически — через естественные носовые ходы, без разрезов. Операция проводится под общей анестезией. После эндоскопической полипотомии восстановление занимает около 7–10 дней."
+          }
+        }
       ]
     }
     </script>
@@ -95,6 +164,45 @@
     }
     </script>
     
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Наталья Васильевна Лукань",
+      "url": "https://lukan-lor.ru",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "41",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Пациентка" },
+          "reviewBody": "С такой тщательностью меня не осматривал ещё ни один врач. На первичной консультации я пробыла более часа. Все объяснила, показала. Очень приятно, что врач горит своей работой!",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "datePublished": "2025-01-01"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Пациентка" },
+          "reviewBody": "Наталья Васильевна — профессионал с большой буквы. Врач очень внимательный, неравнодушный, все доходчиво объясняет.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "datePublished": "2025-12-01"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Пациентка" },
+          "reviewBody": "13 лет пользовалась сосудосуживающими каплями. Наталья Васильевна провела операцию, удалила костный шип. Огромная благодарность за профессионализм и человеческое отношение.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+          "datePublished": "2025-10-01"
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --primary: #1a4d2e;
@@ -121,7 +229,7 @@ html, body {
 }
 
         body {
-            font-family: 'Commissioner', sans-serif;
+            font-family: 'Commissioner', 'Helvetica Neue', Arial, sans-serif;
             color: var(--text);
             background: var(--bg);
             line-height: 1.7;
@@ -129,7 +237,7 @@ html, body {
         }
         
         h1, h2, h3, h4 {
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
             font-weight: 400;
             line-height: 1.2;
         }
@@ -200,16 +308,16 @@ html, body {
         }
         
         .nav-cta:hover {
-
-    .nav-links{display:flex;gap:2rem;}
-    .nav-link{color:var(--text);text-decoration:none;font-size:.95rem;font-weight:500;transition:color .3s;}
-    .nav-link:hover{color:var(--primary);}
-    .mobile-menu-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem;}
-    .mobile-menu-toggle span{width:25px;height:3px;background:var(--primary);border-radius:2px;transition:all .3s;}
             background: var(--primary-light);
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(26, 77, 46, 0.2);
         }
+
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-link { color: var(--text); text-decoration: none; font-size: .95rem; font-weight: 500; transition: color .3s; }
+        .nav-link:hover { color: var(--primary); }
+        .mobile-menu-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .5rem; }
+        .mobile-menu-toggle span { width: 25px; height: 3px; background: var(--primary); border-radius: 2px; transition: all .3s; }
         
         /* Hero Section */
         .hero {
@@ -930,20 +1038,32 @@ html, body {
         }
         
         @media (max-width: 768px) {
-    .nav-container{position:relative;}
-    .mobile-menu-toggle{display:flex;order:2;}
-    .nav-logo{order:1;}
-    .nav-cta{order:3;padding:.5rem 1rem;font-size:.85rem;}
-    .nav-links{position:absolute;top:100%;left:0;right:0;background:white;flex-direction:column;padding:1rem;box-shadow:0 4px 20px rgba(0,0,0,.1);transform:translateY(-100%);opacity:0;pointer-events:none;transition:all .3s;gap:0;}
-    .nav-links.active{transform:translateY(0);opacity:1;pointer-events:all;}
-    .nav-link{padding:1rem;border-bottom:1px solid var(--bg-alt);}
-    .nav-link:last-child{border-bottom:none;}
-    .mobile-menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(7px,7px);}
-    .mobile-menu-toggle.active span:nth-child(2){opacity:0;}
-    .mobile-menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-7px);}
+            .nav-container { position: relative; }
+            .mobile-menu-toggle { display: flex; order: 2; }
+            .nav-logo { order: 1; }
+            .nav-cta { order: 3; padding: .5rem 1rem; font-size: .85rem; }
             .nav-links {
-                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 20px rgba(0,0,0,.1);
+                transform: translateY(-10px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all .3s;
+                gap: 0;
+                z-index: 999;
             }
+            .nav-links.active { transform: translateY(0); opacity: 1; pointer-events: all; }
+            .nav-link { padding: 1rem; border-bottom: 1px solid var(--bg-alt); }
+            .nav-link:last-child { border-bottom: none; }
+            .mobile-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(7px,7px); }
+            .mobile-menu-toggle.active span:nth-child(2) { opacity: 0; }
+            .mobile-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px,-7px); }
             
             .hero h1 {
                 font-size: 2.5rem;
@@ -981,7 +1101,8 @@ html, body {
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <header>
+    <nav aria-label="Основная навигация">
         <div class="nav-container">
             <div class="nav-logo">Н.В. Лукань</div>
             <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Меню">
@@ -990,22 +1111,17 @@ html, body {
             <div class="nav-links" id="navLinks">
                 <a href="#services" class="nav-link">Услуги</a>
                 <a href="#about" class="nav-link">О докторе</a>
+                <a href="#approach" class="nav-link">Подход</a>
+                <a href="#testimonials" class="nav-link">Отзывы</a>
                 <a href="publikatsii.html" class="nav-link">Публикации</a>
                 <a href="#contact" class="nav-link">Контакты</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#approach">Подход</a></li>
-                <li><a href="#testimonials">Отзывы</a></li>
-                <li><a href="publikatsii.html">Публикации</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
             <a href="tel:+74957774849" class="nav-cta">Записаться на приём</a>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
+    </header>
+    <main>
+    <section id="about" class="hero">
         <div class="hero-content">
             <div class="hero-subtitle">ЛОР-хирург высшей категории • Апнолог</div>
             <h1>Наталья Васильевна Лукань</h1>
@@ -1034,15 +1150,13 @@ html, body {
             </div>
         </div>
         
-        <!-- AI-friendly intro paragraph -->
-        <div style="max-width: 800px; margin: 3rem auto 0; text-align: center; font-size: 1.1rem; line-height: 1.8; color: var(--text); padding: 0 2rem;">
-            <p style="margin-bottom: 1.5rem;">
-                Меня зовут <strong>Наталья Васильевна Лукань</strong>, я ЛОР-хирург высшей категории и апнолог с практикой в <strong>Москве</strong>. Специализируюсь на эндоскопических операциях, септопластике, лечении храпа и апноэ сна. Принимаю в <strong>СМ-Клиника</strong> на улице Академика Анохина.
-            </p>
-        </div>
+        <!-- AI-friendly intro paragraph (скрыт визуально, виден поисковикам) -->
+        <p style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
+            Меня зовут Наталья Васильевна Лукань, я ЛОР-хирург высшей категории и апнолог с практикой в Москве. Специализируюсь на эндоскопических операциях, септопластике, лечении храпа и апноэ сна. Принимаю в СМ-Клиника на улице Академика Анохина, метро Юго-Западная.
+        </p>
         <div class="hero-image">
             <div class="image-frame">
-                <img src="images/doctor-portrait.jpg" alt="Наталья Васильевна Лукань">
+                <img src="images/doctor-portrait.jpg" alt="Наталья Васильевна Лукань, ЛОР-хирург высшей категории, СМ-Клиника Москва" loading="eager" width="600" height="800">
             </div>
             <div class="image-accent"></div>
         </div>
@@ -1204,7 +1318,7 @@ html, body {
             </div>
             
             <div class="approach-image">
-                <img src="images/clinic-interior.jpg" alt="СМ-Клиника интерьер" style="width: 100%; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+                <img src="images/clinic-interior.jpg" alt="Кабинет ЛОР-хирурга в СМ-Клиника на ул. Академика Анохина, Москва" loading="lazy" style="width: 100%; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
             </div>
         </div>
     </section>
@@ -1378,6 +1492,7 @@ html, body {
     </section>
 
     <!-- Footer -->
+    </main>
     <footer>
         <div class="footer-container">
             <div class="footer-about">
