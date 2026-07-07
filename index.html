@@ -191,8 +191,7 @@ html, body {
         }
 
         .nav-link-download {
-            color: var(--primary);
-            font-weight: 500;
+            display: none; /* на десктопе скрыта — есть отдельная кнопка рядом */
         }
 
         /* Правая группа: памятка + кнопка + гамбургер */
@@ -1010,7 +1009,7 @@ html, body {
             }
 
             .nav-link-download {
-                display: none; /* в мобильном меню есть отдельно в nav-right */
+                display: block; /* показываем в мобильном выпадающем меню */
             }
 
             .mobile-menu-toggle {
